@@ -29,7 +29,11 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Dockerfile" />
+    <Content Include=".dockerignore">
+      <SubType>Content</SubType>
+      <DependentUpon>Dockerfile</DependentUpon>
+    </Content>
+    <None Include="Dockerfile" />
     <Content Include="prod.conf" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
